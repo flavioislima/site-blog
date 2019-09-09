@@ -12,7 +12,7 @@ const links = [
   {
     id: 3,
     name: "Linkedin",
-    url: "https://linkedin.com/flavioflima",
+    url: "https://linkedin.com/flavioflima-dev",
   },
 ]
 
