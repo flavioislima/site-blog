@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `ReactiveJS`,
-    description: `Blogs about Development, carrer and life! :D`,
+    description: `Blogs about Development, career and life! :D`,
     position: `Javascript Engineer @GearsOfLeo Stockholm`,
     author: `Flavio F Lima`,
   },
@@ -13,6 +13,16 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+      options: {
+        name: `posts`,
+        path: `${__dirname}/posts`,
+      },
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [],
       },
     },
     `gatsby-transformer-sharp`,
