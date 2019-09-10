@@ -1,18 +1,9 @@
 import * as React from "react"
 
+import { PostItemProps } from "../../types"
 import * as S from "./styled"
 
-interface Props {
-  slug: string
-  category: string
-  date: string
-  timeToRead: string
-  title: string
-  description: string
-  background?: string
-}
-
-const PostItem: React.FC<Props> = ({
+const PostItem: React.FC<PostItemProps> = ({
   slug,
   background,
   category,
