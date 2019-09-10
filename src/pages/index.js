@@ -8,7 +8,7 @@ import PostItem from "../components/PostItem"
 
 const IndexPage = () => {
   const {
-    allMarkdownRemark: { edges },
+    allMarkdownRemark: { edges }
   } = useStaticQuery(query)
 
   return (
@@ -18,8 +18,8 @@ const IndexPage = () => {
         ({
           node: {
             frontmatter: { title, description, category, background, date },
-            timeToRead,
-          },
+            timeToRead
+          }
         }) => (
           <PostItem
             slug={"/about/"}

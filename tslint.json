@@ -1,5 +1,5 @@
 {
-  "extends": ["tslint:recommended", "tslint-react"],
+  "extends": ["tslint:recommended", "tslint-react", "tslint-config-prettier"],
   "rules": {
     "arrow-parens": false,
     "interface-name": [true, "never-prefix"],
@@ -19,12 +19,11 @@
     "object-literal-sort-keys": false,
     "quotemark": [
       true,
-      "single",
+      "double",
       "jsx-double",
       "avoid-escape",
       "avoid-template"
     ],
-    "semicolon": [true, "always", "strict-bound-class-methods"],
     "trailing-comma": [
       true,
       {
@@ -39,19 +38,17 @@
     "object-literal-sort-keys": false,
     "quotemark": [
       true,
-      "single",
+      "double",
       "jsx-double",
       "avoid-escape",
       "avoid-template"
     ],
-    "semicolon": [true, "always", "strict-bound-class-methods"],
     "trailing-comma": [
       true,
       {
         "multiline": "never",
         "singleline": "never"
       }
-    ],
-    "react-hooks-nesting": "error"
+    ]
   }
 }

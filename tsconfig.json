@@ -30,7 +30,7 @@
     "jest.config.js",
     "coverage",
     "watchman",
-    "gatsby-browses.js",
+    "gatsby-browser.js",
     "gatsby-config.js",
     "gatsby-node.js",
     "cssnano.config.js",
