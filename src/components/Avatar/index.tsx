@@ -1,5 +1,5 @@
-import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
+import * as React from "react"
 import * as S from "./styled"
 
 const Avatar = () => {

@@ -1,7 +1,9 @@
-import React from "react"
-
-import styled from "styled-components"
 import { Link } from "gatsby"
+import styled from "styled-components"
+
+interface Props {
+  background?: string
+}
 
 export const PostItemLink = styled(Link)`
   color: #8899a6;
@@ -20,7 +22,7 @@ export const PostItemWrapper = styled.section`
   width: 100%;
 `
 
-export const PostItemTag = styled.div`
+export const PostItemTag = styled.div<Props>`
   align-items: center;
   background: ${props => (props.background ? props.background : "#1fa1f2")};
   border-radius: 50%;

@@ -5,7 +5,7 @@ import { Twitter } from "styled-icons/boxicons-logos/Twitter"
 const Icons = {
   Github,
   Linkedin,
-  Twitter,
+  Twitter
 }
 
 export default Icons

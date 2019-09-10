@@ -2,13 +2,13 @@ const links = [
   {
     id: 1,
     label: "Home",
-    url: "/",
+    url: "/"
   },
   {
     id: 2,
     label: "About",
-    url: "/about",
-  },
+    url: "/about"
+  }
 ]
 
 export default links

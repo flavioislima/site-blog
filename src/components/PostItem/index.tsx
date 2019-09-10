@@ -1,16 +1,25 @@
-import React from "react"
-import PropTypes from "prop-types"
+import * as React from "react"
 
 import * as S from "./styled"
 
-const PostItem = ({
+interface Props {
+  slug: string
+  category: string
+  date: string
+  timeToRead: string
+  title: string
+  description: string
+  background?: string
+}
+
+const PostItem: React.FC<Props> = ({
   slug,
   background,
   category,
   date,
   timeToRead,
   title,
-  description,
+  description
 }) => {
   return (
     <S.PostItemLink to={slug}>
@@ -24,16 +33,6 @@ const PostItem = ({
       </S.PostItemWrapper>
     </S.PostItemLink>
   )
-}
-
-PostItem.propTypes = {
-  slug: PropTypes.string.isRequired,
-  background: PropTypes.string,
-  title: PropTypes.string.isRequired,
-  category: PropTypes.string.isRequired,
-  date: PropTypes.string.isRequired,
-  timeToRead: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
 }
 
 export default PostItem
