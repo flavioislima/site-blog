@@ -21,14 +21,15 @@ const IndexPage = () => {
             {
               node: {
                 frontmatter: { title, description, category, background, date },
-                timeToRead
+                timeToRead,
+                fields: { slug }
               }
             }: EdgesProps,
             i: number
           ) => (
             <PostItem
               key={i}
-              slug={"/about/"}
+              slug={slug}
               title={title}
               description={description}
               category={category}
@@ -45,7 +46,7 @@ const IndexPage = () => {
 
 const query = graphql`
   query getPosts {
-    allMarkdownRemark {
+    allMarkdownRemark(sort: { fields: frontmatter___date, order: DESC }) {
       edges {
         node {
           id
@@ -57,6 +58,9 @@ const query = graphql`
             title
           }
           timeToRead
+          fields {
+            slug
+          }
         }
       }
     }

@@ -11,8 +11,14 @@ export interface PostItemProps {
 export interface NodeProps {
   frontmatter: PostItemProps
   timeToRead: string
+  fields: FieldsProps
+  html: string
 }
 
 export interface EdgesProps {
   node: NodeProps
+}
+
+interface FieldsProps {
+  slug: string
 }

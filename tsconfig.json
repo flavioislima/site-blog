@@ -20,6 +20,7 @@
     "node_modules",
     "ci-config",
     "build",
+    "public",
     "config",
     "scripts",
     "acceptance-tests",
